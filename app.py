@@ -56,18 +56,23 @@ Search_image = PhotoImage(file="images/search.png")
 myimage = Label(image=Search_image)
 myimage.place(x=20, y=20)
 
-textfield = tk.Entry(root, justify="center", width=17, font=("poppins", 25, "bold"), bg="#404040", border=0, fg="white")
+textfield = tk.Entry(root, justify="center", width=17, font=("poppins", 25, "bold"), bg="brown", border=0, fg="beige")
 textfield.place(x=50, y=40)
 textfield.focus()
 
 search_icon = PhotoImage(file="images/search_icon.png")
-myimage_icon = Button(image=search_icon, borderwidth=0, cursor="hand2", bg="#404040", command=getWeather)
+myimage_icon = Button(image=search_icon, borderwidth=0, cursor="hand2", bg="green", command=getWeather)
 myimage_icon.place(x=399, y=31)
 
 #logo
 logo_image = PhotoImage(file="images/logo.png")
 logo = Label(image=logo_image)
-logo.place(x=150, y=100)
+logo.place(x=150, y=140)
+
+logo_image1 = PhotoImage(file="images/logo2.png")
+logo1 = Label(image=logo_image1)
+logo1.place(x=500, y=1)
+
 
 #Bottom Box
 Frame_image = PhotoImage(file="images/box.png")
@@ -99,11 +104,14 @@ t.place(x=400, y=250)
 c = Label(font=("arial", 15, "bold"))
 c.place(x=400, y=230)
 
-company = Label(root, text="THE_MASTERMINDS", font=("times", 14, "bold", "italic"), fg="#FF0000")
-company.place(x=700, y=30)
+company = Label(root, text="THE_MASTERMINDS", font=("times", 14, "bold", "italic"), bg="yellow", fg="#FF0000")
+company.place(x=700, y=40)
 
-dev = Label(root, text="Kennedy Kalaluka", font=("times", 11, "bold", "italic"), fg="#FF0000")
-dev.place(x=760, y=50)
+dev = Label(root, text="Kennedy Kalaluka", font=("times", 11, "bold", "italic"), bg="yellow", fg="#FF0000")
+dev.place(x=760, y=60)
+
+dev1 = Label(root, text="Copyright of Parvat Computer Technology (youtube channel)", font=("times", 8, "bold", "italic"), fg="black")
+dev1.place(x=300, y=480)
 
 w = Label(text="...", font=("arial", 20, "bold"), bg="#1AB5EF")
 w.place(x=120, y=430)
