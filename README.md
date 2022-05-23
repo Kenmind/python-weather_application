@@ -13,7 +13,7 @@ This app was developed using python3
 
 ### Required Libraries
 - Tkinter
-	``` sudo pip3 install tk or sudo apt-get install python3-tk 
+	``` sudo pip3 install tk or sudo apt-get install python3-tk
 	```
 - Geopy
 	``` sudo pip3 install geopy
@@ -46,7 +46,7 @@ To install this app follow these steps
 4. Enter the name of a City you want to check the current forecast in the text field and hit the search button.
 
 ## Bugs
-No known bugs yet, if you find any please open a pull request on this repo
+No known bugs yet, if you find any please open a pull request on [this repo](https://github.com/Kenmind/python-weather_application/pulls)
 
 ## Author
 |S/N | NAME | LINKS |
