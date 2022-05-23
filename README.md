@@ -13,23 +13,23 @@ This app was developed using python3
 
 ### Required Libraries
 - Tkinter
-``` sudo pip3 install tk or sudo apt-get install python3-tk
-```
+	``` sudo pip3 install tk or sudo apt-get install python3-tk 
+	```
 - Geopy
-```sudo pip3 install geopy
-```
+	``` sudo pip3 install geopy
+	```
 - Timezonefinder
-```sudo pip3 install timezonefinder
-```
+	``` sudo pip3 install timezonefinder
+	```
 - Datetime
-``` sudo pip3 install datetime
-```
+	``` sudo pip3 install datetime
+	```
 - Requests
-``` sudo pip3 install requests
-```
+	``` sudo pip3 install requests
+	```
 - pytz
-``` sudo pip3 install pytz
-```
+	``` sudo pip3 install pytz
+	```
 
 ## How To Install
 
