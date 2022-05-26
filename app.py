@@ -56,7 +56,8 @@ Search_image = PhotoImage(file="images/search.png")
 myimage = Label(image=Search_image)
 myimage.place(x=20, y=20)
 
-textfield = tk.Entry(root, justify="center", width=17, font=("poppins", 25, "bold"), bg="brown", border=0, fg="beige")
+textfield = tk.Entry(root, justify="center", width=17, font=("poppins", 25, "bold"), bg="#404040", border="1", fg="beige")
+
 textfield.place(x=50, y=40)
 textfield.focus()
 
@@ -104,11 +105,11 @@ t.place(x=400, y=250)
 c = Label(font=("arial", 15, "bold"))
 c.place(x=400, y=230)
 
-company = Label(root, text="THE_MASTERMINDS", font=("times", 14, "bold", "italic"), bg="yellow", fg="#FF0000")
-company.place(x=700, y=40)
+company = Label(root, text="The_Masterminds", font=("times", 10, "bold", "italic"), fg="#404040")
+company.place(x=30, y=1)
 
-dev = Label(root, text="Kennedy Kalaluka", font=("times", 11, "bold", "italic"), bg="yellow", fg="#FF0000")
-dev.place(x=760, y=60)
+dev = Label(root, text="Kennedy Kalaluka", font=("times", 8, "bold", "italic"), fg="#404040")
+dev.place(x=58, y=13)
 
 dev1 = Label(root, text="Copyright of Parvat Computer Technology (youtube channel)", font=("times", 8, "bold", "italic"), fg="black")
 dev1.place(x=300, y=480)
