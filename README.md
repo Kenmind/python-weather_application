@@ -1,7 +1,9 @@
 <h1><center>PYTHON WEATHER APPLICATION</center></h1>
+
 ![APP](images/cover_md.png)
 
-<p>A simple python current weather application<br>This application is script based and can be installed by cloning int this [repository](https://github.com/Kenmind/python-weather_application) and running app.py</p>
+<p>A simple python current weather application<br>This application is script based and can be installed by cloning int this 
+[repository](https://github.com/Kenmind/python-weather_application) and running app.py</p>
 
 ## Environment
 
@@ -14,23 +16,17 @@ This app was developed using python3
 
 ### Required Libraries
 - Tkinter
-	``` sudo pip3 install tk or sudo apt-get install python3-tk
-	```
+	```sudo pip3 install tk or sudo apt-get install python3-tk```
 - Geopy
-	``` sudo pip3 install geopy
-	```
+	```sudo pip3 install geopy```
 - Timezonefinder
-	``` sudo pip3 install timezonefinder
-	```
+	```sudo pip3 install timezonefinder```
 - Datetime
-	``` sudo pip3 install datetime
-	```
+	```sudo pip3 install datetime```
 - Requests
-	``` sudo pip3 install requests
-	```
+	```sudo pip3 install requests```
 - pytz
-	``` sudo pip3 install pytz
-	```
+	```sudo pip3 install pytz```
 
 ## Installation and Usage
 
