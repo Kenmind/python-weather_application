@@ -2,8 +2,7 @@
 
 ![APP](images/cover_md.png)
 
-<p>A simple python current weather application<br>This application is script based and can be installed by cloning int this 
-[repository](https://github.com/Kenmind/python-weather_application) and running app.py</p>
+<p>A simple python current weather application<br>This application is script based and can be installed by cloning int this [Repository](https://github.com/Kenmind/python-weather_application) and running app.py </p>
 
 ## Environment
 
@@ -37,7 +36,7 @@ To install this app follow these steps
 2. Type 
 ```cd python-wheather_application```
 3. To run the app, type
-```./app.py or python3 app.py```
+```./app.py``` or ```python3 app.py```
 4. Enter the name of a City you want to check the current forecast in the text field and hit the search button.
 
 ## Bugs
