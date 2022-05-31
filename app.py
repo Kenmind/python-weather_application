@@ -9,13 +9,13 @@ from datetime import datetime
 import requests
 import pytz
 
-root = Tk()
-root.title("Python Weather Application")
-root.geometry("900x500+300+200")
-root.resizable(False, False)
+app = Tk()
+app.title("WEATHER APPLICATION")
+app.geometry("900x500+300+200")
+app.resizable(False, False)
 
 def getWeather():
-    """ Get weather update"""
+    """ Get current weather updates"""
     try:
         city = textfield.get()
 
@@ -27,9 +27,9 @@ def getWeather():
         local_time = datetime.now(home)
         current_time = local_time.strftime("%I:%M %p")
         clock.config(text=current_time)
-        name.config(text="CURRENT WEATHER")
+        name.config(text="CURRENT WEATHER UPDATE FOR THIS CITY")
 
-        #Weather
+        #OpenWeatherMapAPI Request
         api = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=26d7ea49a3374452ae2e7e867d04c597"
 
         json_data = requests.get(api).json()
@@ -56,7 +56,7 @@ Search_image = PhotoImage(file="images/search.png")
 myimage = Label(image=Search_image)
 myimage.place(x=20, y=20)
 
-textfield = tk.Entry(root, justify="center", width=17, font=("poppins", 25, "bold"), bg="#404040", border="1", fg="beige")
+textfield = tk.Entry(app, justify="center", width=17, font=("poppins", 25, "bold"), bg="#404040", border="1", fg="beige")
 
 textfield.place(x=50, y=40)
 textfield.focus()
@@ -81,22 +81,22 @@ frame_myimage = Label(image=Frame_image)
 frame_myimage.pack(padx=5, pady=5, side=BOTTOM)
 
 #time
-name = Label(root, font=("arial", 15, "bold"))
+name = Label(app, font=("arial", 15, "bold"))
 name.place(x=30, y=100)
-clock = Label(root, font=("Helvetica",20))
+clock = Label(app, font=("Helvetica",20))
 clock.place(x=30, y=130)
 
 #Labels
-label0 = Label(root, text="WIND SPEED", font=("Helvetica", 15, "bold"), fg="white", bg="#1AB5EF")
+label0 = Label(app, text="WIND SPEED", font=("Helvetica", 15, "bold"), fg="white", bg="#1AB5EF")
 label0.place(x=110,y=400)
 
-label1 = Label(root, text="HUMIDITY", font=("Helvetica", 15, "bold"), fg="white", bg="#1AB5EF")
+label1 = Label(app, text="HUMIDITY", font=("Helvetica", 15, "bold"), fg="white", bg="#1AB5EF")
 label1.place(x=260,y=400)
 
-label2 = Label(root, text="DESCRIPTION", font=("Helvetica", 15, "bold"), fg="white", bg="#1AB5EF")
+label2 = Label(app, text="DESCRIPTION", font=("Helvetica", 15, "bold"), fg="white", bg="#1AB5EF")
 label2.place(x=430,y=400)
 
-label3 = Label(root, text="PRESSURE", font=("Helvetica", 15, "bold"), fg="white", bg="#1AB5EF")
+label3 = Label(app, text="PRESSURE", font=("Helvetica", 15, "bold"), fg="white", bg="#1AB5EF")
 label3.place(x=650,y=400)
 
 t = Label(font=("arial", 70, "bold"), fg="#EE666D")
@@ -105,14 +105,14 @@ t.place(x=400, y=250)
 c = Label(font=("arial", 15, "bold"))
 c.place(x=400, y=230)
 
-company = Label(root, text="The_Masterminds", font=("times", 10, "bold", "italic"), fg="#404040")
-company.place(x=30, y=1)
+company_name = Label(app, text="The_Masterminds", font=("times", 10, "bold", "italic"), fg="#404040")
+company_name.place(x=30, y=1)
 
-dev = Label(root, text="Kennedy Kalaluka", font=("times", 8, "bold", "italic"), fg="#404040")
-dev.place(x=58, y=13)
+developer_name = Label(app, text="Kennedy Kalaluka", font=("times", 8, "bold", "italic"), fg="#404040")
+developer_name.place(x=58, y=13)
 
-dev1 = Label(root, text="Copyright of Parvat Computer Technology (youtube channel)", font=("times", 8, "bold", "italic"), fg="black")
-dev1.place(x=300, y=480)
+tutor_name = Label(app, text="Copyright of Parvat Computer Technology (youtube channel)", font=("times", 8, "bold", "italic"), fg="black")
+tutor_name.place(x=300, y=480)
 
 w = Label(text="...", font=("arial", 20, "bold"), bg="#1AB5EF")
 w.place(x=120, y=430)
@@ -126,4 +126,4 @@ d.place(x=430, y=430)
 p = Label(text="...", font=("arial", 20, "bold"), bg="#1AB5EF")
 p.place(x=670, y=430)
 
-root.mainloop()
+app.mainloop()
