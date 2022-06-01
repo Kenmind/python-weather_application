@@ -2,9 +2,8 @@
 
 ![APP](images/cover_md.png)
 
-<p>A simple python current weather application<br>This application is script based and can be installed by cloning int this [Repository](https://github.com/Kenmind/python-weather_application) and running app.py 
+A simple python current weather application<br>This application is script based and can be installed by cloning int this [Repository](https://github.com/Kenmind/python-weather_application) and running app.py 
  [Blogpost](https://www.linkedin.com/feed/update/urn:li:ugcPost:6937833795517566976?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3AugcPost%3A6937833795517566976%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
-</p>
 
 ## Environment
 
